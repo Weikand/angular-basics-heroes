@@ -13,7 +13,7 @@
       <h1>{{hero.superhero}} <small>- {{hero.alter_ego}} </small></h1>
       <mat-divider></mat-divider>
       <br>
-      <img [src]="hero | heroImage">
+      <img [src]="hero.id | heroImage:hero.alt_img">
     </div>
     <div fxFlex="50">
       <h1>{{hero.publisher}}</h1>

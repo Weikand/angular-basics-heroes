@@ -14,6 +14,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { HeroCardComponent } from './components/hero-card/hero-card.component';
 import { HeroImagePipe } from './pipes/hero-image.pipe';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 
 
@@ -25,7 +26,8 @@ import { HeroImagePipe } from './pipes/hero-image.pipe';
     HomeComponent,
     ListComponent,
     HeroCardComponent,
-    HeroImagePipe
+    HeroImagePipe,
+    ConfirmDialogComponent
   ],
   imports: [
     CommonModule,
