@@ -90,7 +90,6 @@ export class AddComponent implements OnInit {
       width: '300px',
       data: {...this.hero}
     });
-    // switchMap(({id}) => this.heroesService.getHeroById(id))
     confirmDialog.afterClosed().pipe(
       switchMap((result) => result ?
           this.heroesService.deleteHero(this.hero.id!) : new BehaviorSubject(false)
